@@ -10,7 +10,7 @@ def main():
         base_path = sys.argv[1]
     else:
         base_path = "/"
-    public_path = Path("./public")
+    public_path = Path("./docs")
     if os.path.exists(public_path):
         for item in public_path.iterdir():
             if item.is_file() or item.is_symlink():
